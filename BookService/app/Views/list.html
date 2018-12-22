@@ -1,0 +1,8 @@
+﻿<div ng-controller="ListController">
+    <ul ng-repeat="book in books">
+        <li>
+            <strong>{{book.Author.Name}}</strong>: {{book.Title}}
+            <a href="#/details/{{book.Id}}">Details</a>
+        </li>
+    </ul>
+</div>
